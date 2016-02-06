@@ -1,12 +1,5 @@
 # Calculator.rb
 
-#def calculator()
-#	puts 'Zahl1 eingeben: '
-
-#	puts 'Zahl2 eingeben: '
-
-#	puts 'Operator eingeben: '
-
 $result = 0
 
 def add (a, b)
