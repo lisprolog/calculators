@@ -24,8 +24,6 @@ number1 = gets.to_i
 puts "Zahl2 eingeben: "
 number2 = gets.to_i
 
-puts "Operator eingeben:"
-
 puts "Operator [+]|[-]|[*]|[/] eingeben"
 operator = gets.chomp
 
@@ -37,3 +35,4 @@ case operator
 end
 
 print $result
+print "\n"
