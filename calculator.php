@@ -1,44 +1,29 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-<form action="welcome.php" method="post">
-Zahl1: <br>   
-<input type="text" name="zahl1"><br>
-Operator: <br>
-<input type="text" name="operator"><br>
-Zahl2:<br>    
-<input type="text" name="zahl2"><br>
-<input type="submit">
-</form>
-
-
 <?php
-$zahl1 = zahl1;
-$zahl2 = zahl2;
-$operator = operator;
-$result = 0;
-$txtResult = "Resultat ist $result";
 
-switch ($operator) {
-    case "+":
-    	$result = $zahl1 + $zahl2;
-        break;
-    case "-":
-  	$result = $zahl1 - $zahl2;
-        break;
-    case "*":
-    	$result = $zahl1 * $zahl2;
-        break;
-    case "/":
-        $result = $zahl1 / $zahl2;
-        break;
-    default:
-      
+$num1 = $_POST["num1"];
+$num2 = $_POST["num2"];
+$operator = $_POST["operations"];
+
+if($operator == "add"){
+	$answer_add = $num1 + $num2;
+	echo $num1." + ".$num2." = ";
+	echo $answer_add;
+}
+if($operator == "sub"){
+	$answer_sub = $num1 - $num2;
+	echo $num1." - ".$num2." = ";
+	echo $answer_sub;
+}
+if($operator == "mul"){
+	$answer_mul = $num1 * $num2;
+	echo $num1." * ".$num2." = ";
+	echo $answer_mul;
+}
+if($operator == "div"){
+	$answer_div = $num1 / $num2;
+	echo $num1." / ".$num2." = ";
+	echo $answer_div;
 }
 
-echo "Result = $result";
-?> 
+?>
 
-</body>
-</html>
