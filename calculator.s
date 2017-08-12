@@ -1,5 +1,5 @@
-;; This program is under construction
-;; Dieses Program ist nicht funktionsfähig.
+;; This program was written from scratch and doesn't work properly.
+;; I uploaded a second Calculator.s, which is compiled with <gcc -S> from Calculator.c
 
 .section .data
 hello1: .ascii "Bitte Zahl1 eingeben:"
