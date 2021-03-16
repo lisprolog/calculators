@@ -68,7 +68,11 @@ int main () {
    int ret2;
    int ret3;
    double ret4;
-   
+
+   printf("first:\n");
+   scanf("%d", &a);
+   printf("second:\n");
+   scanf("%d", &b);   
    SampleClass *sampleClass = [[SampleClass alloc]init];
 
    /* calling methods to get results */
